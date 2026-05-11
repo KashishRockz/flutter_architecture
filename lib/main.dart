@@ -35,7 +35,8 @@ class _MyAppState extends ConsumerState<MyApp> {
 
   void _showSessionExpiredDialog() {
     final router = ref.read(routerProvider);
-    final context = router.routerDelegate.navigatorKey.currentContext;
+    final context = navigatorKey.currentContext;
+    // final context = router.routerDelegate.navigatorKey.currentContext;
     if (context == null) return;
 
     showDialog<void>(

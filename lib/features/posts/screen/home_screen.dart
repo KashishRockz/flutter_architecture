@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import '../../../../../router.dart';
 import '../../../core/dio_provider.dart';
+import '../../../router.dart';
 import '../../auth/viewmodel/auth_viewmodel.dart';
 import '../providers/post_provider.dart';
 

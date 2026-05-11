@@ -5,7 +5,7 @@ class UserModel {
   final String lastName;
   final String fullName;
   final String email;
-  final String image;
+  final String? image;
 
   UserModel({
     required this.id,
@@ -25,7 +25,7 @@ class UserModel {
       lastName: json['lastName'] ?? '',
       fullName: json['fullName'] ?? '',
       email: json['email'] ?? '',
-      image: json['image'] ?? '',
+      image: json['image'],
     );
   }
 }

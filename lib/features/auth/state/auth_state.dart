@@ -16,7 +16,7 @@ abstract class AuthState with _$AuthState {
     @Default(false) bool isAuthenticated,
   }) = _AuthState;
 
-  bool isApiLoaclearding(AuthEnum type)   => apiStates[type]?.isLoading ?? false;
+  bool isApiLoading(AuthEnum type)   => apiStates[type]?.isLoading ?? false;
   bool isApiSuccess(AuthEnum type)   => apiStates[type]?.isSuccess ?? false;
   bool isApiError(AuthEnum type)     => apiStates[type]?.isError   ?? false;
   String? getApiError(AuthEnum type) => apiStates[type]?.error;
